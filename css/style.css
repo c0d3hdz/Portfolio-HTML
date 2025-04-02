@@ -1,0 +1,204 @@
+:root {
+    --color-theme-primary: #f0f0f0;
+    --color-theme-secondary: #000;
+    --color-theme-tertiary: #333;
+
+    --border-radius: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    scrollbar-width: none;
+    scrollbar-color: var(--color-theme-tertiary) var(--color-theme-primary);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 15px 30px;
+    min-width: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 35px;
+}
+.Subtitle {
+    font-size: 1.5rem;
+    color: var(--color-theme-secondary);
+    font-weight: 700;
+}
+.Subtitle a {
+    color: var(--color-theme-secondary);
+}
+.Nav-Menu {
+    display: flex;
+    gap: 20px;
+}
+.Nav-Menu li {
+    list-style: none;
+    cursor: pointer;
+}
+.Nav-Menu a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-theme-tertiary);
+}
+
+.Dev-presentation {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 35px;
+    justify-content: space-between;
+}
+.Presentation {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-theme-secondary);
+}
+.Description {
+    font-size: 1.2rem;
+    color: var(--color-theme-tertiary);
+    font-weight: 500;
+    margin-top: 10px;
+}
+.Developer-Image {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.Dev-Projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.Sub-head {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-theme-secondary);
+    margin-bottom: 10px;
+}
+
+.Cards-Projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.Card-Project {
+    width: 350px;
+    height: 200px;
+    background-color: var(--color-theme-primary);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: var(--border-radius);
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.Footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: auto;
+}
+.Social-Icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--color-theme-secondary);
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.Social-Icon:hover {
+    transform: scale(1.1);
+}
+.Copyright {
+    font-size: 1.2rem;
+    color: var(--color-theme-tertiary);
+    font-weight: 500;
+    display: block;
+}
+.Email {
+    font-size: 1rem;
+}
+
+@media screen {
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        padding: 10px 15px;
+    }
+    header {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .Nav-Menu {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .Dev-presentation {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Developer-Image {
+        width: 350px;
+        height: auto;
+    }
+    .Dev-Projects {
+        text-align: center;
+    }
+    .Cards-Projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Card-Project {
+        width: 350px;
+        height: 200px;
+    }
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Social-Icon {
+        margin: 5px;
+    }
+    .Copyright {
+        text-align: center;
+    }
+}
