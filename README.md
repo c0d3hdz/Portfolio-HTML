@@ -28,7 +28,7 @@ Este proyecto es una plantilla para crear un portafolio personal utilizando HTML
 
 ## Vista Previa
 
-![Vista previa del portafolio](https://raw.githubusercontent.com/c0d3hdz/Portfolio-HTML/refs/heads/main/image/Preview.png)
+![Vista previa del portafolio](https://raw.githubusercontent.com/c0d3hdz/Portfolio-HTML/refs/heads/master/image/Preview.png)
 
 > **Idea del diseño:** Este portafolio está diseñado para ser minimalista y profesional, con un enfoque en la claridad y la accesibilidad. Puedes adaptarlo fácilmente para reflejar tu estilo personal.
 ## Personalización
